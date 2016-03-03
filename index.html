@@ -7,16 +7,93 @@
     </head>
     <body>
         <header>
-            <nav></nav>
+            <nav>
+                <ul>
+                    <li>Accueil</li>
+                    <li>Mon panier</li>
+                    <li>Tous les produits</li>
+                </ul>
+            </nav>
+            <div class="logo_home">
+                <span class="img_logo"></span>
+            </div>
+            <div class="panier_top">
+                <div class="button_panier">Panier</div>
+                <div class="content_panier_top">
+                    <div class="panier_top_header">Panier (3 articles)</div>
+                    <div class="panier_top_content">
+                        <ul>
+                            <li>Bonnet Loutre</li>
+                            <li>T-Shirt Loutre</li>
+                            <li>Statuette Loutre</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="recherche_top">
+                <form action="#">
+                    <label>
+                        Rechercher :
+                        <input type="text" placeholder=" ... Loutre" />
+                        <input class="submit_loupe" type="submit" value="valider"/>
+                    </label>
+                </form>
+            </div>
         </header>
         <main>
-            <section id="promotions"></section>
+            <!-- template accueil -->
+            <section id="promotions" class="slider_css">
+                <article>
+                    <span class="description_hover">Promotion 1</span>
+                    <!-- <img /> -->
+                </article>
+                <article>
+                    <span class="description_hover">Promotion 2</span>
+                    <!-- <img /> -->
+                </article>
+                <article>
+                    <span class="description_hover">Promotion 3</span>
+                    <!-- <img /> -->
+                </article>
+            </section>
             <section id="liste_articles_accueil">
-                <article></article>
-            </div>
+                <article>
+                    <span class="article_title">Objet article</span>
+                    <span class="article_price">Nom de l’objet - Prix</span>
+                    <span class="description_hover">Description au survol</span>
+                    <!-- <img /> -->
+                </article>
+            </section>
+
+            <!-- template détail -->
+            <section class="detail_article">
+                <div class="detail_top">
+                    <div class="detail_top_left">
+                        <!-- <img /> -->
+                    </div>
+                    <div class="detail_top_right">
+                        <div class="detail_top_right_info">Infos</div>
+                        <div class="detail_top_right_titre">Titre</div>
+                        <div class="detail_top_right_prix">Prix</div>
+                        <button>Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="detail_bot">
+                    <div class="detail_bot_description">
+                        Description de l'article
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
-            <nav></nav>
+            <nav>
+                <ul>
+                    <li>Mention légales</li>
+                    <li>Qui sommes-nous ?</li>
+                    <li>Détails techniques</li>
+                </ul>
+            </nav>
+            <div class="gif_loutre"></div>
         </footer>
     </body>
 </html>

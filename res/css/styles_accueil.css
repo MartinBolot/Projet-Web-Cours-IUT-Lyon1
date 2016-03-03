@@ -1,0 +1,37 @@
+/*styles génériques*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+header,main,footer{
+    margin: 0 0 20px;
+    width: 100%;
+}
+/*header*/
+header > nav,.logo_home,.panier_top,.recherche_top{
+    display: inline-block;
+}
+header > nav{
+    width: 35%;
+}
+.logo_home{
+    width: 20%;
+}
+.panier_top{
+    width: 20%;
+}
+.recherche_top{
+    width: 25%;
+}
+/*header nav*/
+header > nav > ul{
+    text-align: center;
+}
+header > nav > ul li{
+    display: inline-block;
+}
