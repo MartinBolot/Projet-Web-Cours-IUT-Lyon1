@@ -14,9 +14,10 @@ html,body{
 a{
     color: #333;
     text-decoration: none;
+    transition: all 0.2s ease 0s;
 }
 a:hover,a:focus{
-    color: #666;
+    color: #999;
 }
 header,main,footer{
     margin: 0 0 20px;
