@@ -5,33 +5,105 @@
     padding: 0;
 }
 html,body{
+    color: #333;
+    font-family: verdana, arial, sans-serif;
+    font-size: 0.95em;
     height: 100%;
     width: 100%;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover,a:focus{
+    color: #666;
 }
 header,main,footer{
     margin: 0 0 20px;
     width: 100%;
 }
 /*header*/
-header > nav,.logo_home,.panier_top,.recherche_top{
+header{
+    background: #ddd;
+    border-bottom: 1px solid #aaa;
+    height: 50px;
+}
+.header_container{
+    height: 100%;
+    margin: 0 auto;
+    width: 95%;
+}
+header nav,.logo_home,.panier_top,.recherche_top{
     display: inline-block;
 }
-header > nav{
-    width: 35%;
+header nav{
+    height: 100%;
+    vertical-align: top;
+    width: 30%;
 }
 .logo_home{
     width: 20%;
 }
 .panier_top{
+    height: 100%;
     width: 20%;
 }
 .recherche_top{
-    width: 25%;
+    width: 20%;
 }
 /*header nav*/
-header > nav > ul{
+header nav > ul{
+    height: 100%;
     text-align: center;
 }
-header > nav > ul li{
+header nav > ul li{
+    background: #FFF;
     display: inline-block;
+    height: 100%;
+    padding: 1em 0.5em 0;
+}
+header nav > ul li.active{
+    background: #eee;
+}
+/*header panier*/
+.panier_top{
+    background: #FFF;
+    position: relative;
+    vertical-align: top;
+}
+.button_panier{
+    display: block;
+    cursor: default;
+    padding: 1em 0 0;
+    text-align: center;
+    vertical-align: top;
+}
+.button_panier::before{
+    content: "\e116";
+}
+.panier_top:hover .button_panier::before{
+    color: #bbb;
+}
+.panier_top .content_panier_top{
+    background: #FFF;
+    display: none;
+    padding: 1em;
+    position: absolute;
+    text-align: center;
+    top: 3em;
+    width: 100%;
+}
+.panier_top_header{
+    margin: 0 0 1em;
+}
+.panier_top .content_panier_top ul{
+    list-style: none;
+}
+.panier_top:hover .content_panier_top{  /* /!\ pas accessible en l'etat car pas de focus*/
+    display: block;
+}
+/*header recherche*/
+/*main*/
+main{
+    background: #eee;
 }

@@ -3,41 +3,44 @@
     <head>
         <title>AdopteUneLoutre - Accueil</title>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="res/css/fonts.css" />
         <link rel="stylesheet" href="res/css/styles_accueil.css" />
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li>Accueil</li>
-                    <li>Mon panier</li>
-                    <li>Tous les produits</li>
-                </ul>
-            </nav>
-            <div class="logo_home">
-                <span class="img_logo"></span>
-            </div>
-            <div class="panier_top">
-                <div class="button_panier">Panier</div>
-                <div class="content_panier_top">
-                    <div class="panier_top_header">Panier (3 articles)</div>
-                    <div class="panier_top_content">
-                        <ul>
-                            <li>Bonnet Loutre</li>
-                            <li>T-Shirt Loutre</li>
-                            <li>Statuette Loutre</li>
-                        </ul>
+            <div class="header_container">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Accueil</a></li>
+                        <li><a href="#">Mon panier</a></li>
+                        <li><a href="#">Tous les produits</a></li>
+                    </ul>
+                </nav>
+                <div class="logo_home">
+                    <span class="img_logo">AdopteUneLoutre</span>
+                </div>
+                <div class="panier_top">
+                    <div class="button_panier glyphicon"></div>
+                    <div class="content_panier_top">
+                        <div class="panier_top_header">Panier (3 articles)</div>
+                        <div class="panier_top_content">
+                            <ul>
+                                <li>Bonnet Loutre</li>
+                                <li>T-Shirt Loutre</li>
+                                <li>Statuette Loutre</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="recherche_top">
-                <form action="#">
-                    <label>
-                        Rechercher :
-                        <input type="text" placeholder=" ... Loutre" />
-                        <input class="submit_loupe" type="submit" value="valider"/>
-                    </label>
-                </form>
+                <div class="recherche_top">
+                    <form action="#">
+                        <label>
+                            Rechercher :
+                            <input type="text" placeholder=" ... Loutre" />
+                            <input class="submit_loupe" type="submit" value="valider"/>
+                        </label>
+                    </form>
+                </div>
             </div>
         </header>
         <main>
@@ -88,9 +91,9 @@
         <footer>
             <nav>
                 <ul>
-                    <li>Mention légales</li>
-                    <li>Qui sommes-nous ?</li>
-                    <li>Détails techniques</li>
+                    <li><a href="#">Mention légales</a></li>
+                    <li><a href="#">Qui sommes-nous ?</a></li>
+                    <li><a href="#">Détails techniques</a></li>
                 </ul>
             </nav>
             <div class="gif_loutre"></div>
