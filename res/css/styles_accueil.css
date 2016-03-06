@@ -43,6 +43,7 @@ header nav{
     width: 30%;
 }
 .logo_home{
+    height: 100%;
     width: 20%;
 }
 .panier_top{
@@ -50,6 +51,7 @@ header nav{
     width: 20%;
 }
 .recherche_top{
+    height: 100%;
     width: 20%;
 }
 /*header nav*/
@@ -65,6 +67,27 @@ header nav > ul li{
 }
 header nav > ul li.active{
     background: #eee;
+}
+/*heder logo*/
+.logo_home{
+    vertical-align: top;
+}
+.img_logo{
+    background: url("../img/interface/logo_greyscale.jpg") no-repeat scroll top left;
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-indent: 1000px;
+    width: 50px;
+}
+.logo_home:hover .img_logo{
+    background-image: url("../img/interface/logo.jpg");
+    height: 100px;
+    width: 100px;
+
+    transition: height 0.5s ease-in-out 0s,width 0.5s ease-in-out 0s;
 }
 /*header panier*/
 .panier_top{
@@ -94,7 +117,7 @@ header nav > ul li.active{
     top: 3em;
     width: 100%;
 }
-.panier_top_header{
+.panier_top_header,.panier_top_content{
     margin: 0 0 1em;
 }
 .panier_top .content_panier_top ul{
@@ -103,7 +126,54 @@ header nav > ul li.active{
 .panier_top:hover .content_panier_top{  /* /!\ pas accessible en l'etat car pas de focus*/
     display: block;
 }
+.validate_panier_top button{
+    background: #5cb85c;
+    border: none;
+    border-radius: 1em;
+    color: #FFF;
+    padding: 0.5em;
+    width: 80%;
+}
+.validate_panier_top button:hover{
+    color: #ddd;
+    cursor: pointer;
+}
 /*header recherche*/
+.recherche_top{
+     background: #FFF;
+}
+.recherche_top form{
+    text-align: center;
+}
+.recherche_top label,.recherche_top button{
+    display: inline-block;
+}
+.recherche_top label{
+    text-align: center;
+    width: 65%;
+}
+.recherche_top label input{
+    border: none;
+    text-align: center;
+    width: 100%;
+}
+.recherche_top label input:focus,.recherche_top label input:hover{
+    border: 1px solid #bbb;
+}
+.recherche_top button{
+    background: transparent;
+    border: none;
+    width: 30%;
+}
+.button_loupe{
+    cursor: pointer;
+}
+.button_loupe::before{
+    content: "\e003";
+}
+.button_loupe:hover::before{
+    color: #bbb;
+}
 /*main*/
 main{
     background: #eee;
