@@ -74,6 +74,7 @@ header nav > ul li.active{
 }
 .img_logo{
     background: url("../img/interface/logo_greyscale.jpg") no-repeat scroll top left;
+    background-size: cover;
     border-radius: 50%;
     display: block;
     height: 100%;
@@ -82,7 +83,7 @@ header nav > ul li.active{
     text-indent: 1000px;
     width: 50px;
 }
-.logo_home:hover .img_logo{
+.img_logo:hover {
     background-image: url("../img/interface/logo.jpg");
     height: 100px;
     width: 100px;
@@ -177,4 +178,21 @@ header nav > ul li.active{
 /*main*/
 main{
     background: #eee;
+}
+/*main promotions slider*/
+/*cf styles_slider.css*/
+#promotions{
+    margin: 0 0 3em;
+}
+/*main liste articles accueil*/
+#liste_articles_accueil{
+    margin: 4em 0 2em;
+    padding: 1em 0;
+}
+#liste_articles_accueil article{
+    border: 1px solid #333;
+    display: inline-block;
+    height: 300px;
+    margin: 0 2%;
+    width: 30%;
 }
