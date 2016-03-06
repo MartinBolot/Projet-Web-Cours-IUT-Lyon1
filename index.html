@@ -3,20 +3,104 @@
     <head>
         <title>AdopteUneLoutre - Accueil</title>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="res/css/fonts.css" />
         <link rel="stylesheet" href="res/css/styles_accueil.css" />
     </head>
     <body>
         <header>
-            <nav></nav>
+            <div class="header_container">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Accueil</a></li>
+                        <li><a href="#">Mon panier</a></li>
+                        <li><a href="#">Tous les produits</a></li>
+                    </ul>
+                </nav>
+                <div class="logo_home">
+                    <span class="img_logo">AdopteUneLoutre</span>
+                </div>
+                <div class="panier_top">
+                    <div class="button_panier glyphicon"></div>
+                    <div class="content_panier_top">
+                        <div class="panier_top_header">Panier (3 articles)</div>
+                        <div class="panier_top_content">
+                            <ul>
+                                <li>Bonnet Loutre</li>
+                                <li>T-Shirt Loutre</li>
+                                <li>Statuette Loutre</li>
+                            </ul>
+                        </div>
+                        <div class="validate_panier_top">
+                            <button>Passer la commande</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recherche_top">
+                    <form action="#">
+                        <label>
+                            Rechercher :
+                            <input type="text" placeholder=" ... Loutre" />
+                            <!-- <input class="submit_loupe" type="submit" value="valider"/> -->
+                        </label>
+                        <button><span class="button_loupe glyphicon"></span></button>
+                    </form>
+                </div>
+            </div>
         </header>
         <main>
-            <section id="promotions"></section>
+            <!-- template accueil -->
+            <section id="promotions" class="slider_css">
+                <article>
+                    <span class="description_hover">Promotion 1</span>
+                    <!-- <img /> -->
+                </article>
+                <article>
+                    <span class="description_hover">Promotion 2</span>
+                    <!-- <img /> -->
+                </article>
+                <article>
+                    <span class="description_hover">Promotion 3</span>
+                    <!-- <img /> -->
+                </article>
+            </section>
             <section id="liste_articles_accueil">
-                <article></article>
-            </div>
+                <article>
+                    <span class="article_title">Objet article</span>
+                    <span class="article_price">Nom de l’objet - Prix</span>
+                    <span class="description_hover">Description au survol</span>
+                    <!-- <img /> -->
+                </article>
+            </section>
+
+            <!-- template détail -->
+            <section class="detail_article">
+                <div class="detail_top">
+                    <div class="detail_top_left">
+                        <!-- <img /> -->
+                    </div>
+                    <div class="detail_top_right">
+                        <div class="detail_top_right_info">Infos</div>
+                        <div class="detail_top_right_titre">Titre</div>
+                        <div class="detail_top_right_prix">Prix</div>
+                        <button>Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="detail_bot">
+                    <div class="detail_bot_description">
+                        Description de l'article
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
-            <nav></nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Mention légales</a></li>
+                    <li><a href="#">Qui sommes-nous ?</a></li>
+                    <li><a href="#">Détails techniques</a></li>
+                </ul>
+            </nav>
+            <div class="gif_loutre"></div>
         </footer>
     </body>
 </html>
