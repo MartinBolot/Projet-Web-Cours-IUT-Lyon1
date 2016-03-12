@@ -20,18 +20,22 @@ a:hover,a:focus{
     color: #999;
 }
 header,main,footer{
-    margin: 0 0 20px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
     width: 100%;
 }
 /*header*/
 header{
     background: #ddd;
     border-bottom: 1px solid #aaa;
-    height: 50px;
+    height: 80px;
+    position: relative;
 }
 .header_container{
     height: 100%;
     margin: 0 auto;
+    padding: 0.5em 0;
     width: 95%;
 }
 header nav,.logo_home,.panier_top,.recherche_top{
@@ -39,6 +43,7 @@ header nav,.logo_home,.panier_top,.recherche_top{
 }
 header nav{
     height: 100%;
+    text-align: center;
     vertical-align: top;
     width: 30%;
 }
@@ -54,16 +59,26 @@ header nav{
     height: 100%;
     width: 20%;
 }
+.bloc_blanc_top{
+    background: #FFF;
+    border: 1px solid #ccc;
+}
 /*header nav*/
 header nav > ul{
+    display: inline-flex;
     height: 100%;
     text-align: center;
 }
 header nav > ul li{
     background: #FFF;
+    border: 1px solid #ccc;
+    border-left: none;
     display: inline-block;
     height: 100%;
-    padding: 1em 0.5em 0;
+    padding: 1.5em 0.5em 0;
+}
+header nav > ul li:first-child{
+    border-left: 1px solid #ccc;
 }
 header nav > ul li.active{
     background: #eee;
@@ -81,7 +96,7 @@ header nav > ul li.active{
     margin: 0 auto;
     overflow: hidden;
     text-indent: 1000px;
-    width: 50px;
+    width: 65px;
 }
 .img_logo:hover {
     background-image: url("../img/interface/logo.jpg");
@@ -99,7 +114,7 @@ header nav > ul li.active{
 .button_panier{
     display: block;
     cursor: default;
-    padding: 1em 0 0;
+    padding: 1.5em 0 0;
     text-align: center;
     vertical-align: top;
 }
@@ -111,12 +126,14 @@ header nav > ul li.active{
 }
 .panier_top .content_panier_top{
     background: #FFF;
+    border-top: none;
     display: none;
     padding: 1em;
     position: absolute;
     text-align: center;
-    top: 3em;
+    top: 100%;
     width: 100%;
+    z-index: 30;
 }
 .panier_top_header,.panier_top_content{
     margin: 0 0 1em;
@@ -190,9 +207,80 @@ main{
     padding: 1em 0;
 }
 #liste_articles_accueil article{
-    border: 1px solid #333;
     display: inline-block;
     height: 300px;
-    margin: 0 2%;
+    margin: 2em 1em;
     width: 30%;
+}
+#liste_articles_accueil .article_content{
+    border: 1px solid #aaa;
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+#liste_articles_accueil .article_price{
+    text-align: center;
+    width: 100%;
+}
+#liste_articles_accueil .article_content .description_hover{
+    color: #777;
+    opacity: 0;
+    margin: 1em 0 0;
+}
+#liste_articles_accueil .article_content:hover .description_hover{
+    opacity: 1;
+    transition: opacity 0.2s ease-in 0s;
+}
+#liste_articles_accueil .article_content .article_title,
+#liste_articles_accueil .article_price,
+#liste_articles_accueil .article_content .description_hover{
+    display: block;
+    position: relative;
+    z-index: 20;
+}
+#liste_articles_accueil .article_content .article_title{
+    margin: 2em 0 0;
+}
+#liste_articles_accueil .article_content img{
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.2s ease-in 0s;
+    width: 100%;
+    z-index: 10;
+}
+#liste_articles_accueil .article_content:hover img{
+    opacity: 0.8;
+}
+#liste_articles_accueil .article_price .article_price_details_name{
+    font-weight: bold;
+}
+/*main detail*/
+.detail_top_left,.detail_top_right{
+    display: inline-block;
+}
+.detail_top_left{
+    width: 50%;
+}
+.detail_top_left img{
+    height: auto;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.detail_top_right{
+    width: 49%;
+}
+
+/*footer*/
+footer{
+    background: #ddd;
+    border-top: 1px solid #aaa;
+    height: 75px;
+    position: relative;
 }
