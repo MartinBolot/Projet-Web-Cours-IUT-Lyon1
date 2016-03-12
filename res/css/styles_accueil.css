@@ -11,6 +11,15 @@ html,body{
     height: 100%;
     width: 100%;
 }
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+}
 a{
     color: #333;
     text-decoration: none;
@@ -45,7 +54,7 @@ header nav{
     height: 100%;
     text-align: center;
     vertical-align: top;
-    width: 30%;
+    width: 35%;
 }
 .logo_home{
     height: 100%;
@@ -68,6 +77,7 @@ header nav > ul{
     display: inline-flex;
     height: 100%;
     text-align: center;
+    width: 100%;
 }
 header nav > ul li{
     background: #FFF;
@@ -75,12 +85,14 @@ header nav > ul li{
     border-left: none;
     display: inline-block;
     height: 100%;
-    padding: 1.5em 0.5em 0;
+    padding: 1.5em 1em 0;
+    transition: background 0.2s ease-in 0s;
+    width: 30%;
 }
 header nav > ul li:first-child{
     border-left: 1px solid #ccc;
 }
-header nav > ul li.active{
+header nav > ul li.active,header nav > ul li:hover{
     background: #eee;
 }
 /*heder logo*/
@@ -128,11 +140,12 @@ header nav > ul li.active{
     background: #FFF;
     border-top: none;
     display: none;
+    left: -1px;
     padding: 1em;
     position: absolute;
     text-align: center;
     top: 100%;
-    width: 100%;
+    width: 100.5%;
     z-index: 30;
 }
 .panier_top_header,.panier_top_content{
@@ -161,6 +174,8 @@ header nav > ul li.active{
      background: #FFF;
 }
 .recherche_top form{
+    height: 100%;
+    padding: 0.5em 1em;
     text-align: center;
 }
 .recherche_top label,.recherche_top button{
@@ -171,25 +186,26 @@ header nav > ul li.active{
     width: 65%;
 }
 .recherche_top label input{
-    border: none;
-    text-align: center;
+    border: 1px solid #bbb;
+    border-radius: 1em;
+    padding: 0.2em 1em;
     width: 100%;
 }
 .recherche_top label input:focus,.recherche_top label input:hover{
-    border: 1px solid #bbb;
+    border: 1px solid #aaa;
 }
 .recherche_top button{
     background: transparent;
     border: none;
     width: 30%;
 }
-.button_loupe{
+.recherche_top button{
     cursor: pointer;
 }
 .button_loupe::before{
     content: "\e003";
 }
-.button_loupe:hover::before{
+.recherche_top button:hover .button_loupe::before{
     color: #bbb;
 }
 /*main*/
@@ -197,7 +213,7 @@ main{
     background: #eee;
 }
 /*main promotions slider*/
-/*cf styles_slider.css*/
+    /*cf styles_slider.css*/
 #promotions{
     margin: 0 0 3em;
 }
@@ -226,7 +242,7 @@ main{
     width: 100%;
 }
 #liste_articles_accueil .article_content .description_hover{
-    color: #777;
+    color: #666;
     opacity: 0;
     margin: 1em 0 0;
 }
@@ -249,21 +265,37 @@ main{
     left: 0;
     position: absolute;
     top: 0;
-    transition: opacity 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
     width: 100%;
     z-index: 10;
 }
 #liste_articles_accueil .article_content:hover img{
     opacity: 0.8;
+    width: 101%;
 }
 #liste_articles_accueil .article_price .article_price_details_name{
     font-weight: bold;
 }
 /*main detail*/
+.detail_article{
+    margin: 2em 0;
+    padding: 0 1em;
+}
+.detail_top{
+    height: 600px;
+}
+.detail_nomarticle{
+    margin: 1.5em 0;
+    text-align: center;
+}
 .detail_top_left,.detail_top_right{
     display: inline-block;
+    height: 100%;
+    vertical-align: top;
 }
 .detail_top_left{
+    margin: 0 10% 0 0;
+    overflow: hidden;
     width: 50%;
 }
 .detail_top_left img{
@@ -274,9 +306,8 @@ main{
     width: 100%;
 }
 .detail_top_right{
-    width: 49%;
+    width: 39%;
 }
-
 /*footer*/
 footer{
     background: #ddd;
@@ -284,3 +315,4 @@ footer{
     height: 75px;
     position: relative;
 }
+/*media queries*/
