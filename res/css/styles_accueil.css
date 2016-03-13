@@ -17,12 +17,40 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
     font-size: 2em;
+    margin: 1em 0 0;
+    text-align: center;
 }
 h2{
     font-size: 1.5em;
 }
-p{
-    padding: 0 0 0.5em;
+p,ol,ul{
+    padding: 0 0 1em;
+}
+em{
+    font-weight: bold;
+}
+code{
+    background: #444;
+    color: #FFF;
+    padding: 0.2em;
+}
+code.css .classe{
+    color: #ff9900;
+}
+code.css .element,code.css .atselector{
+    color: #ff3300;
+}
+code.css .id{
+    color: #3399ff;
+}
+code.css .pseudoselecteur{
+    color: violet;
+}
+code.css .valeur{
+    color: #ffd11a;
+}
+ol{
+    padding-left: 1.2em;
 }
 a{
     color: #333;
@@ -62,11 +90,11 @@ header nav{
 }
 .logo_home{
     height: 100%;
-    width: 20%;
+    width: 28.5%;
 }
 .panier_top{
     height: 100%;
-    width: 20%;
+    width: 15%;
 }
 .recherche_top{
     height: 100%;
@@ -80,6 +108,7 @@ header nav{
 header nav > ul{
     display: inline-flex;
     height: 100%;
+    padding: inherit;
     text-align: center;
     width: 100%;
 }
@@ -217,6 +246,10 @@ header nav > ul li.active,header nav > ul li:hover{
 /*main*/
 main{
     background: #eee;
+    padding: 0 0 2em;
+}
+main > section{
+    padding: 0 1em;
 }
 /*main promotions slider*/
     /*cf styles_slider.css*/
@@ -227,6 +260,10 @@ main{
 #liste_articles_accueil{
     margin: 4em 0 2em;
     padding: 1em 0;
+}
+#liste_articles_accueil h1{
+    margin: 1em 0 0;
+    text-align: center;
 }
 #liste_articles_accueil article{
     display: inline-block;
@@ -292,6 +329,9 @@ main{
 }
 #liste_articles_accueil .article_price .article_price_details_name{
     font-weight: bold;
+}
+.article_title a:hover{
+    color: #666;
 }
 /*main detail*/
 .detail_article{
@@ -368,6 +408,12 @@ footer > nav > ul > li{
     display: inline-block;
     margin: 0 1em 0 0;
 }
+/*details techniques*/
+#detail_techniques a{
+    text-decoration: underline;
+}
+
+/**/
 /*print*/
 @media print {/*mettre styles print ici*/}
 /*media queries*/
