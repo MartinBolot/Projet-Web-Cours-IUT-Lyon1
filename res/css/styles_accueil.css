@@ -17,6 +17,8 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
     font-size: 2em;
+    margin: 1em 0 0;
+    text-align: center;
 }
 h2{
     font-size: 1.5em;
@@ -227,6 +229,10 @@ main{
 #liste_articles_accueil{
     margin: 4em 0 2em;
     padding: 1em 0;
+}
+#liste_articles_accueil h1{
+    margin: 1em 0 0;
+    text-align: center;
 }
 #liste_articles_accueil article{
     display: inline-block;
