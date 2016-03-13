@@ -26,6 +26,18 @@ h2{
 p,ol,ul{
     padding: 0 0 1em;
 }
+ol{
+    list-style-type: none;
+    margin: 0.5em 0 0;
+    padding-left: 2em;
+}
+ol > li:before{
+    content: counter(li) " - ";
+}
+ol > li{
+    counter-increment: li;
+    padding: 0 0 0.5em;
+}
 em{
     font-weight: bold;
 }
@@ -49,8 +61,8 @@ code.css .pseudoselecteur{
 code.css .valeur{
     color: #ffd11a;
 }
-ol{
-    padding-left: 1.2em;
+code.html .balise{
+    color: #ff3300;
 }
 a{
     color: #333;
@@ -251,6 +263,24 @@ main{
 main > section{
     padding: 0 1em;
 }
+main h2,main h3{
+    text-align: center;
+}
+main h3{
+
+}
+.bloc_blanc_main{
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5em 1em;
+
+    box-shadow: -1px 4px 7px 0px #aaa;
+    -moz-box-shadow: -1px 4px 7px 0px #aaa;
+    -webkit-box-shadow: -1px 4px 7px 0px #aaa;
+    -o-box-shadow: -1px 4px 7px 0px #aaa;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#aaa, Direction=255, Strength=7);
+}
 /*main promotions slider*/
     /*cf styles_slider.css*/
 #promotions{
@@ -391,6 +421,11 @@ main > section{
     text-align: left;
     width: 93%;
 }
+/*details techniques*/
+#detail_techniques hr{
+    margin: 2em auto;
+    width: 10%;
+}
 /*footer*/
 footer{
     background: #ddd;
@@ -419,17 +454,17 @@ footer > nav > ul > li{
 /*media queries*/
 @media (max-width: 1280px) {
     #liste_articles_accueil article{
-        height: 350px;
+        height: 330px;
     }
 }
 @media (max-width: 1100px) {
     #liste_articles_accueil article{
-        height: 300px;
+        height: 280px;
     }
 }
 @media (max-width: 1024px) {
     #liste_articles_accueil article{
-        height: 250px;
+        height: 230px;
     }
 }
 @media (max-width: 768px) {     /*styles mobile*/
