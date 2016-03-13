@@ -23,8 +23,34 @@ h1{
 h2{
     font-size: 1.5em;
 }
-p{
-    padding: 0 0 0.5em;
+p,ol,ul{
+    padding: 0 0 1em;
+}
+em{
+    font-weight: bold;
+}
+code{
+    background: #444;
+    color: #FFF;
+    padding: 0.2em;
+}
+code.css .classe{
+    color: #ff9900;
+}
+code.css .element,code.css .atselector{
+    color: #ff3300;
+}
+code.css .id{
+    color: #3399ff;
+}
+code.css .pseudoselecteur{
+    color: violet;
+}
+code.css .valeur{
+    color: #ffd11a;
+}
+ol{
+    padding-left: 1.2em;
 }
 a{
     color: #333;
@@ -82,6 +108,7 @@ header nav{
 header nav > ul{
     display: inline-flex;
     height: 100%;
+    padding: inherit;
     text-align: center;
     width: 100%;
 }
@@ -219,6 +246,10 @@ header nav > ul li.active,header nav > ul li:hover{
 /*main*/
 main{
     background: #eee;
+    padding: 0 0 2em;
+}
+main > section{
+    padding: 0 1em;
 }
 /*main promotions slider*/
     /*cf styles_slider.css*/
@@ -377,6 +408,12 @@ footer > nav > ul > li{
     display: inline-block;
     margin: 0 1em 0 0;
 }
+/*details techniques*/
+#detail_techniques a{
+    text-decoration: underline;
+}
+
+/**/
 /*print*/
 @media print {/*mettre styles print ici*/}
 /*media queries*/
