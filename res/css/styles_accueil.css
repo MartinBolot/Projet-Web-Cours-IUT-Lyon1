@@ -299,6 +299,9 @@ main{
 #liste_articles_accueil .article_price .article_price_details_name{
     font-weight: bold;
 }
+.article_title a:hover{
+    color: #666;
+}
 /*main detail*/
 .detail_article{
     margin: 2em 0;
