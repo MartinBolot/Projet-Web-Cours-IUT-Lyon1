@@ -202,17 +202,6 @@ header nav > ul li.active,header nav > ul li:hover{
 .panier_top:hover .content_panier_top{  /* /!\ pas accessible en l'etat car pas de focus*/
     display: block;
 }
-.validate_panier_top button{
-    background: #fff;
-    border: 1px solid #bbb;
-    border-radius: 1em;
-    padding: 0.5em;
-    width: 80%;
-}
-.validate_panier_top button:hover{
-    background: #eee;
-    cursor: pointer;
-}
 /*header recherche*/
 .recherche_top{
      background: #FFF;
@@ -232,14 +221,19 @@ header nav > ul li.active,header nav > ul li:hover{
     text-align: center;
     width: 65%;
 }
-.recherche_top label input{
+.recherche_top label input,.table_submit input[type="submit"],.validate_panier_top button{
+    background: #fff;
     border: 1px solid #bbb;
     border-radius: 1em;
     padding: 0.2em 1em;
     transition: background 0.2s ease-in 0s;
     width: 100%;
 }
-.recherche_top label input:focus,.recherche_top label input:hover{
+.table_submit input[type="submit"],.validate_panier_top button{
+    padding: 0.5em;
+    cursor: pointer;
+}
+.recherche_top label input:focus,.recherche_top label input:hover,.table_submit input[type="submit"]:hover,.validate_panier_top button:hover{
     background: #eee;
     border: 1px solid #aaa;
     outline: none;
@@ -443,6 +437,23 @@ main ul > li{
 }
 .liste_resultats a{
     text-decoration: underline;
+}
+/*mon panier*/
+.form_commande table{
+    text-align: center;
+    width: 100%;
+}
+.form_commande table td{
+    padding: 1em;
+}
+.form_commande table th{
+    padding-bottom: 2em;
+}
+.total_achats,.table_submit{
+    text-align: center;
+}
+.table_submit input[type="submit"]{
+    width: auto;
 }
 /*details techniques*/
 #detail_techniques hr{
