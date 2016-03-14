@@ -6,16 +6,16 @@
         <meta name="robots" content="noindex,nofolow"/>
         <meta name="author" content="Martin Bolot et Antoine Daigremont" />
 
-        <link rel="stylesheet" href="res/css/fonts.css" />
-        <link rel="stylesheet" href="res/css/styles.css" />
-        <link rel="stylesheet" href="res/css/styles_slider.css" />
+        <link rel="stylesheet" href="../res/css/fonts.css" />
+        <link rel="stylesheet" href="../res/css/styles.css" />
+        <link rel="stylesheet" href="../res/css/styles_slider.css" />
     </head>
     <body>
         <header>
             <div class="header_container">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="../index.html">Accueil</a></li>
                         <li><a href="mon_panier.html">Mon panier</a></li>
                         <li><a href="#">Produits</a></li>
                     </ul>
@@ -51,33 +51,27 @@
             </div>
         </header>
         <main>
-            <!-- template detail -->
-            <section class="detail_article">
-                <div class="detail_nomarticle">
-                    <h1>Detail - Scotch loutre</h1>
-                </div>
+            <section id="resultat_recherche">
+                <h1>Résultat de la recherche</h1>
                 <div class="bloc_blanc_main">
-                    <div class="detail_top">
-                        <div class="detail_top_left">
-                            <img alt="" src="res/img/rouleauscotch.jpg"/>
-                        </div>
-                        <div class="detail_top_right">
-                            <div class="detail_top_right_titre"><h2>Scotch loutre</h2></div>
-                            <div class="detail_top_right_info"><p>Un support pour rouleau de scotch à l'effigie d'une loutre</p></div>
-                            <div class="detail_top_right_prix"><p>Prix de l'article : 99.99 €</p></div>
-                            <button>Ajouter au panier</button>
-                        </div>
-                    </div>
-                    <div class="detail_bot">
-                            <div class="detail_bot_description">
-                                Description de l'article - Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                    </div>
+                    <h2><span class="recherche_outline">5</span> résultats pour votre recherche : <span class="recherche_outline">"loutre"</span></h2>
+                    <ul class="liste_resultats">
+                        <li>
+                            Scotch <span class="recherche_outline">loutre</span> - 99.99€ - <a href="detail_article.html">Voir l'objet</a>
+                        </li>
+                        <li>
+                            Mug <span class="recherche_outline">loutre</span> - 20€ - <a href="detail_article.html">Voir l'objet</a>
+                        </li>
+                        <li>
+                            Statue <span class="recherche_outline">loutre</span> - 30€ - <a href="detail_article.html">Voir l'objet</a>
+                        </li>
+                        <li>
+                            T-shirt <span class="recherche_outline">loutre</span> hipster - 70€ - <a href="detail_article.html">Voir l'objet</a>
+                        </li>
+                        <li>
+                            T-shirt <span class="recherche_outline">loutre</span> moustache- 25€ - <a href="detail_article.html">Voir l'objet</a>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>

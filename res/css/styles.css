@@ -78,9 +78,11 @@ header,main,footer{
     vertical-align: top;
     width: 100%;
 }
+header,footer{
+    background: #D7CCC8;
+}
 /*header*/
 header{
-    background: #ddd;
     border-bottom: 1px solid #aaa;
     height: 80px;
     position: relative;
@@ -364,6 +366,9 @@ main ul > li{
 #liste_articles_accueil .article_price .article_price_details_name{
     font-weight: bold;
 }
+.article_price_details_name a{
+    /*color: #1976D2;*/
+}
 .article_title a:hover{
     color: #666;
 }
@@ -394,6 +399,7 @@ main ul > li{
 .detail_top_left img{
     height: auto;
     left: 0;
+    max-width: 630px;
     position: relative;
     top: 0;
     width: 100%;
@@ -443,11 +449,14 @@ main ul > li{
     text-align: center;
     width: 100%;
 }
+.form_commande tr:nth-child(2n-1){
+    background: #eee;
+}
 .form_commande table td{
     padding: 1em;
 }
 .form_commande table th{
-    padding-bottom: 2em;
+    padding: 1em;
 }
 .total_achats,.table_submit{
     text-align: center;
@@ -460,9 +469,11 @@ main ul > li{
     margin: 2em auto;
     width: 10%;
 }
+#detail_techniques{
+    font-size: 0.95em;
+}
 /*footer*/
 footer{
-    background: #ddd;
     border-top: 1px solid #aaa;
     height: 75px;
     position: relative;
