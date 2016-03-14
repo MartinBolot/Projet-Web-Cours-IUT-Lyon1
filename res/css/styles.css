@@ -538,4 +538,11 @@ footer > nav > ul > li{
     .detail_top{
         height: auto;
     }
+    table{
+        max-width: 100%;
+    }
+    table th,table td{
+        display: inline-block;
+        width: 100%;
+    }
 }
