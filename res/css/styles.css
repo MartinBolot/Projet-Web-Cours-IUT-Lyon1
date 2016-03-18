@@ -192,7 +192,7 @@ header nav > ul li.active,header nav > ul li:hover{
     position: absolute;
     text-align: center;
     top: 100%;
-    width: 100.5%;
+    width: 101%;
     z-index: 30;
 }
 .panier_top_header,.panier_top_content{
