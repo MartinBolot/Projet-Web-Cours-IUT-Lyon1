@@ -464,6 +464,17 @@ main ul > li{
 .table_submit input[type="submit"]{
     width: auto;
 }
+.form_commande table label{
+    display: block;
+}
+.form_commande table label:before{
+    color: #F14336;
+    content: "\e014";
+    cursor: pointer;
+    display: block;
+    float: left;
+    clear: both;
+}
 /*details techniques*/
 #detail_techniques hr{
     margin: 2em auto;
