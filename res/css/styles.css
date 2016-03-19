@@ -79,7 +79,11 @@ header,main,footer{
     width: 100%;
 }
 header,footer{
-    background: #D7CCC8;
+    /*background: #D7CCC8;*/
+    background: #D6BC9A;
+}
+.bodytext{
+    font-size: 0.90em;
 }
 /*header*/
 header{
@@ -256,7 +260,7 @@ header nav > ul li.active,header nav > ul li:hover{
 }
 /*main*/
 main{
-    background: #eee;
+    background: #F5F5F5;
     padding: 0 0 2em;
 }
 main > section{
@@ -480,9 +484,6 @@ main ul > li{
     margin: 2em auto;
     width: 10%;
 }
-#detail_techniques{
-    font-size: 0.95em;
-}
 /*footer*/
 footer{
     border-top: 1px solid #aaa;
@@ -527,9 +528,6 @@ footer > nav > ul > li{
     }
 }
 @media (max-width: 768px) {     /*styles mobile*/
-    main{
-        padding: 0 1em;
-    }
     header nav{
         width: 100%;
     }
