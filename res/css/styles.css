@@ -243,7 +243,7 @@ header nav > ul li.active,header nav > ul li:hover{
     text-align: center;
     width: 65%;
 }
-.recherche_top label input,.table_submit input[type="submit"],.validate_panier_top button{
+.recherche_top label input,.table_submit input[type="submit"],.validate_panier_top a{
     background: #fff;
     border: 1px solid #bbb;
     border-radius: 1em;
@@ -254,11 +254,17 @@ header nav > ul li.active,header nav > ul li:hover{
     -ms-transition: background 0.2s ease-in 0s;
     width: 100%;
 }
-.table_submit input[type="submit"],.validate_panier_top button{
+.validate_panier_top a{
+    padding: 0.2em 1em 0.3em;
+}
+.validate_panier_top a:hover{
+    color: inherit;
+}
+.table_submit input[type="submit"]{
     padding: 0.5em;
     cursor: pointer;
 }
-.recherche_top label input:focus,.recherche_top label input:hover,.table_submit input[type="submit"]:hover,.validate_panier_top button:hover{
+.recherche_top label input:focus,.recherche_top label input:hover,.table_submit input[type="submit"]:hover,.validate_panier_top a:hover{
     background: #eee;
     border: 1px solid #aaa;
     outline: none;
