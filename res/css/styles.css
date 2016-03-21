@@ -373,9 +373,9 @@ main ul > li{
 #liste_articles_accueil .article_content .article_title:before{
     content:"";
     height: 100%;
-    left: 0;
+    left: -1px;
     position: absolute;
-    top: 0;
+    top: -1px;
     transition: transform 0.5s;
     width: 100%;
     z-index: -1;
@@ -385,13 +385,13 @@ main ul > li{
     transform:scale(1);
 }
 #liste_articles_accueil .article_content .article_title:after{
-    border-bottom: 1px solid #666;
-    border-top: 1px solid #666;
+    border-bottom: 1px solid #aaa;
+    border-top: 1px solid #aaa;
     transform: scale(0,1);
 }
 #liste_articles_accueil .article_content .article_title:before{
-    border-left: 1px solid #666;
-    border-right: 1px solid #666;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
     transform: scale(1,0);
 }
 #liste_articles_accueil .article_content img{
@@ -523,6 +523,27 @@ main ul > li{
 #detail_techniques hr{
     margin: 2em auto;
     width: 10%;
+}
+/*remerciements*/
+.thank_you{
+    font-size: 1.2em;
+    text-align: center;
+}
+.back_to_home{
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 1em;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    transition: background 0.2s ease-in 0s;
+    width: auto;
+}
+.back_to_home:hover{
+    background: #eee;
+    border: 1px solid #aaa;
+    outline: none;
 }
 /*footer*/
 footer{
