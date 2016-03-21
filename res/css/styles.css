@@ -558,6 +558,7 @@ main ul > li{
 /*remerciements*/
 .thank_you{
     font-size: 1.2em;
+    padding: 0 0 2em;
     text-align: center;
 }
 .back_to_home{
@@ -565,7 +566,6 @@ main ul > li{
     border: 1px solid #bbb;
     border-radius: 1em;
     cursor: pointer;
-    display: block;
     margin: 0 auto;
     padding: 0.5em 1em;
     transition: background 0.2s ease-in 0s;
