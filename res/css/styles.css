@@ -489,6 +489,7 @@ main ul > li{
     border-radius: 1em;
     cursor: pointer;
     padding: 0.5em 1em;
+    white-space: nowrap;
     width: auto;
 }
 .detail_top_right button:hover{
