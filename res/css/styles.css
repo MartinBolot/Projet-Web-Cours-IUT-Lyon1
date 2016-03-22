@@ -311,7 +311,6 @@ main ul > li{
     -moz-box-shadow: -1px 4px 7px 0px #aaa;
     -webkit-box-shadow: -1px 4px 7px 0px #aaa;
     -o-box-shadow: -1px 4px 7px 0px #aaa;
-    filter:progid:DXImageTransform.Microsoft.Shadow(color=#aaa, Direction=255, Strength=7);
 }
 /*main promotions slider*/
     /*cf styles_slider.css*/
