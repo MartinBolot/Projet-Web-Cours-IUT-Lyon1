@@ -311,7 +311,6 @@ main ul > li{
     -moz-box-shadow: -1px 4px 7px 0px #aaa;
     -webkit-box-shadow: -1px 4px 7px 0px #aaa;
     -o-box-shadow: -1px 4px 7px 0px #aaa;
-    filter:progid:DXImageTransform.Microsoft.Shadow(color=#aaa, Direction=255, Strength=7);
 }
 /*main promotions slider*/
     /*cf styles_slider.css*/
@@ -484,12 +483,13 @@ main ul > li{
     text-align: center;
     width: 39%;
 }
-.detail_top_right button{
+.detail_top_right a{
     background: #FFF;
     border: 1px solid #bbb;
     border-radius: 1em;
     cursor: pointer;
     padding: 0.5em 1em;
+    white-space: nowrap;
     width: auto;
 }
 .detail_top_right button:hover{
