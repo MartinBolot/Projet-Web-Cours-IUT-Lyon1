@@ -483,7 +483,7 @@ main ul > li{
     text-align: center;
     width: 39%;
 }
-.detail_top_right button{
+.detail_top_right a{
     background: #FFF;
     border: 1px solid #bbb;
     border-radius: 1em;
